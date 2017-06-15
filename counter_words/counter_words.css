@@ -1,0 +1,6 @@
+.divstyle{
+  border: solid 1px black;
+  width: 50vw;
+  height: 5vh;
+  min-height: 50px;
+}
