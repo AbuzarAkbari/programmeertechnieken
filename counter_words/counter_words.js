@@ -47,5 +47,5 @@ function hoofdletter(){
             }
             m=0;
           }
-          return (item+" ( " +mf +" komt het vaakste voor ) ") ;
+          return (item+" ( komt " +mf +" keer voor) ") ;
         }
