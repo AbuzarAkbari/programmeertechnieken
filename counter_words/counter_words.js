@@ -15,6 +15,7 @@ function tellLetters(){
   document.getElementById('res2').innerHTML = "aantal woorden " + woordenTeller;
   document.getElementById('res3').innerHTML = "aantal woorden " + word;
   document.getElementById('res4').innerHTML = hoofdletter();
+  document.getElementById('res5').innerHTML = meestVorkomende();
 
 
 }
@@ -28,3 +29,23 @@ function hoofdletter(){
   }
   return array1.join(' ');
   }
+
+  function meestVorkomende(){
+    var tekst = document.getElementById('tekst').value;
+    var apartWoorden = tekst.split(" ");
+    var mf = 1;
+    var m = 0;
+    var item;
+    for (var i=0; i<apartWoorden.length; i++){
+            for (var j=i; j<apartWoorden.length; j++){
+              if (apartWoorden[i] == apartWoorden[j])
+              m++;
+              if (mf<m){
+                mf=m;
+                item = apartWoorden[i];
+              }
+            }
+            m=0;
+          }
+          return (item+" ( " +mf +" times ) ") ;
+        }
