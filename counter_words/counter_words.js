@@ -11,9 +11,9 @@ function tellLetters(){
       var word = apartWoorden [i]
     }
   }
-  document.getElementById('res1').innerHTML = "aantal letters " + letterTeller;
-  document.getElementById('res2').innerHTML = "aantal woorden " + woordenTeller;
-  document.getElementById('res3').innerHTML = "aantal woorden " + word;
+  document.getElementById('res1').innerHTML = "aantal letters = " + letterTeller;
+  document.getElementById('res2').innerHTML = "aantal woorden = " + woordenTeller;
+  document.getElementById('res3').innerHTML = "langste woord = " + word;
   document.getElementById('res4').innerHTML = hoofdletter();
   document.getElementById('res5').innerHTML = meestVorkomende();
 
